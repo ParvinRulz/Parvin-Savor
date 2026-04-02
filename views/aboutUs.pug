@@ -1,0 +1,98 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title About Us Page
+  // Bootstrap CSS
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css' rel='stylesheet')
+  style.
+    body {
+    background-color: white;
+    }
+    h1,
+    h2 {
+    margin-top: 20px;
+    }
+    p {
+    margin-bottom: 10px;
+    }
+    table {
+    margin-top: 20px;
+    }
+    img {
+    margin-top: 20px;
+    }
+    .btn-outline-secondary {
+    background-color: #fd5f97 !important;
+    border-color: #fd5f97 !important;
+    color: white;
+    }
+// Navbar
+nav.navbar.navbar-expand-lg.bg-body-tertiary
+  .container-fluid
+    a.navbar-brand(href='#') Home
+    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav')
+      span.navbar-toggler-icon
+    #navbarNav.collapse.navbar-collapse
+      ul.navbar-nav
+        li.nav-item
+          a.nav-link.active(href='#') Sign-In
+        li.nav-item
+          a.nav-link(href='#') About-Us
+        li.nav-item
+          a.nav-link(href='#') Bookings
+        li.nav-item
+          a.nav-link(href='#') Menu
+        li.nav-item
+          a.nav-link(href='#') Logout
+        li.nav-item
+          a.nav-link(href='#') Forms
+// Content
+.container
+  // About
+  h2.fw-bold Parvin Savor Resort
+  p.lead
+    | Welcome to Parvin Savor a place to relax, chill and work. We cover all
+    | things from the meals that are both local and intercontinental down to
+    | the suites.
+  p.lead
+    | Parvin Savor Resort is located in Kampala Uganda with branches in
+    | London(Parvin Kitchen Delight).
+  // Workforce
+  h2 Our Different Workforce.
+  p.lead Parvin Savor works with a team of beautiful minds.
+  // Table
+  table.table.table-bordered
+    thead
+      tr
+        th Name
+        th Position
+        th Contact
+    tbody
+      tr
+        td Tusiime Ruth Parvin
+        td Founder &amp; Owner
+        td 07709500503
+      tr
+        td Conrad J. Mordecai
+        td Manager
+        td 07597232183
+      tr
+        td Nimungu Mildred
+        td Admin
+        td 07868753423
+      tr
+        td Queen Beth
+        td Supervisor
+        td 07413622823
+  // Image
+  img.img-fluid(src='workforce.jpg' alt='image showing the different workforce.')
+br
+section.container.text-center.mt-5
+  a.btn.btn-outline-secondary.mt-3(href='ourbookings.html')
+    | For Bookings
+// Footer
+footer.bg-light.text-center.mt-5.p-3
+  p.mb-0 &copy; 2026 Parvin Savor Resort. All rights reserved.
+// Bootstrap JS
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js')

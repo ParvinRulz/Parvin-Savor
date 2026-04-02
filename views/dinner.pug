@@ -1,0 +1,171 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Dinner Menu
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css' rel='stylesheet')
+style.
+  .btn-outline-secondary {
+  background-color: #fd5f97 !important;
+  border-color: #fd5f97 !important;
+  color: white;
+  }
+// Navbar
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.mb-4
+  .container-fluid
+    a.navbar-brand(href='#') Main Menu
+    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav')
+      span.navbar-toggler-icon
+    #navbarNav.collapse.navbar-collapse
+      ul.navbar-nav.ms-auto
+        li.nav-item
+          a.nav-link.active(href='#') Home
+        li.nav-item
+          a.nav-link(href='#') Breakfast
+        li.nav-item
+          a.nav-link(href='#') Lunch
+        li.nav-item
+          a.nav-link(href='#') Dinner
+        li.nav-item
+          a.nav-link(href='#') Desert
+        li.nav-item
+          a.nav-link(href='#') Drinks &amp; Cocktails
+// Header
+.container.mb-4
+  h1.text-center.mb-3 Dinner Menu
+  p.text-center
+    | One can always go for the buffet served with a drink either water,
+    | juice, or a soda.
+// Dinner Menu: Main Foods
+.container.mb-5
+  h2.mb-3 Main Foods
+  .row.g-4
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/lunch/pasta2.avif' alt='Spaghetti Bolognese')
+        .card-body
+          h5.card-title Spaghetti Bolognese
+          p.card-text Fried macrons with meatballs.
+          p.fw-bold UGX 40,000
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/lunch/rice1.avif' alt='Brown Fried Rice')
+        .card-body
+          h5.card-title Brown Fried Rice
+          p.card-text Fried rice with meat.
+          p.fw-bold UGX 35,000
+    .col-md-4
+      .card.h-100
+        .card-body
+          h5.card-title Mattoke
+          p.card-text Nicely pressed mattoke.
+          p.fw-bold UGX 15,000
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/lunch/jollof.PNG' alt='Jollof Rice')
+        .card-body
+          h5.card-title Jollof Rice
+          p.card-text A Nigerian touch to fried rice and meat.
+          p.fw-bold UGX 50,000
+    .col-md-4
+      .card.h-100
+        .card-body
+          h5.card-title Cassava
+          p.fw-bold UGX 10,000
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/lunch/potatowedge2.jpg' alt='Fries')
+        .card-body
+          h5.card-title Fries
+          p.card-text Some crunchy potato wedges.
+          p.fw-bold UGX 30,000
+// Stews
+.container.mb-5
+  h2.mb-3 Stews
+  .row.g-4
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/lunch/Goat stew.jpg' alt='Goat Meat')
+        .card-body
+          h5.card-title Goat Meat
+          p.card-text Sizzling goat stew.
+          p.fw-bold UGX 30,000
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/lunch/chickenstew.PNG' alt='Chicken Stew')
+        .card-body
+          h5.card-title Chicken Stew
+          p.card-text Sizzling chicken stew.
+          p.fw-bold UGX 40,000
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/lunch/gnuts.PNG' alt='Groundnuts Stew')
+        .card-body
+          h5.card-title G.nuts
+          p.card-text Pasted sauce with beef.
+          p.fw-bold UGX 30,000
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/lunch/fish.PNG' alt='Fish Stew')
+        .card-body
+          h5.card-title Fish
+          p.card-text Deep fried fish stew.
+          p.fw-bold UGX 45,000
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/lunch/prons.PNG' alt='Sea Food')
+        .card-body
+          h5.card-title Sea Food
+          p.card-text Prawns.
+// Fast Foods
+.container.mb-5
+  h2.mb-3 Fast Foods
+  .row.g-4
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/lunch/chips and c2.avif' alt='Fries & Chicken')
+        .card-body
+          h5.card-title Fries &amp; Chicken
+          p.card-text Crispy chicken and fries.
+          p.fw-bold UGX 35,000
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/lunch/bucket master.avif' alt='Chicken Nuggets')
+        .card-body
+          h5.card-title Chicken Nuggets
+          p.card-text Crunchy chicken pieces.
+          p.fw-bold UGX 20,000
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/lunch/liver.avif' alt='Liver')
+        .card-body
+          h5.card-title Liver
+          p.card-text Pan fried liver.
+          p.fw-bold UGX 40,000
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/lunch/bugger.PNG' alt='Burger')
+        .card-body
+          h5.card-title Burger
+          p.card-text Juicy in every bite.
+          p.fw-bold UGX 35,000
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/lunch/pork.PNG' alt='Fries & Pork')
+        .card-body
+          h5.card-title Fries &amp; Pork
+          p.card-text Pan fried.
+          p.fw-bold UGX 45,000
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/lunch/bbq c.avif' alt='Pizza')
+        .card-body
+          h5.card-title Pizza
+          p.card-text BBQ flavour.
+          p.fw-bold UGX 60,000
+section.container.text-center.mt-5
+  a.btn.btn-outline-secondary.mt-3(href='desert.html')
+    | Order Desert
+// Footer
+footer.bg-light.text-center.mt-5.p-3
+  p.mb-0 &copy; 2026 Parvin Savor Resort. All rights reserved.

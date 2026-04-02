@@ -1,0 +1,131 @@
+doctype html
+| PASTE YOUR HTML CODE HERE
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Our Bookings Page
+h1 This is Our Bookings Page.
+link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css' rel='stylesheet')
+link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css')
+style.
+  body {
+  background-color: #f8f9fa;
+  }
+  .contact-container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  }
+  .contact-info {
+  background: #fd5f97;
+  color: white;
+  border-radius: 15px 0 0 15px;
+  padding: 40px;
+  }
+  .contact-form {
+  background: white;
+  border-radius: 0 15px 15px 0;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  @media (max-width: 768px) {
+  .contact-info {
+  border-radius: 15px 15px 0 0;
+  }
+  .contact-form {
+  border-radius: 0 0 15px 15px;
+  }
+  }
+  .btn-primary {
+  background-color: #fd5f97 !important;
+  border-color: #fd5f97 !important;
+  }
+  .btn-outline-secondary {
+  background-color: #fd5f97 !important;
+  border-color: #fd5f97 !important;
+  color: white;
+  }
+nav.navbar.navbar-expand-lg.bg-body-tertiary
+  .container-fluid
+    a.navbar-brand(href='#') Home
+    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarNav.collapse.navbar-collapse
+      ul.navbar-nav
+        li.nav-item
+          a.nav-link.active(aria-current='page' href='#') Sign-In
+        li.nav-item
+          a.nav-link(href='#') About-Us
+        li.nav-item
+          a.nav-link(href='#') Bookings
+        li.nav-item
+          a.nav-link(href='#') Menu
+        li.nav-item
+          a.nav-link(href='#') Logout
+        li.nav-item
+          a.nav-link(href='#') Forms
+// Bookings section
+.container.contact-container
+  .row.g-0
+    .col-md-5.contact-info.d-flex.flex-column.justify-content-between
+      div
+        h2.fw-bold Book with us
+        p.text-white-50
+        p
+          | Bookings can be made at anytime of the week for the different events you want us to plan.
+        p
+          | If you are looking for the best place to enjoy your staycation, look no further than Parvin Savor resort.
+        p
+          | We host destination weddings, offer modern meeting rooms, conference spaces to meet your business needs as well as comfortable rooms and
+        |               Do you have any questions on how to book ro what services are available? Drop us a message and
+        |               we&apos;ll get back to you within 24 hours.
+        p
+        .mt-5
+          .d-flex.mb-4
+            i.bi.bi-geo-alt-fill.me-3.fs-4
+            p.mb-0 7413, Parvin City, 3
+          .d-flex.mb-4
+            i.bi.bi-telephone-fill.me-3.fs-4
+            p.mb-0 +256 770000000
+          .d-flex.mb-4
+            i.bi.bi-envelope-at-fill.me-3.fs-4
+            p.mb-0 parvin@rulz.com
+      .social-links.mt-4
+        a.text-white.me-3(href='#')
+          i.bi.bi-watsapp.fs-5
+        a.text-white.me-3(href='#')
+          i.bi.bi-twitter-x.fs-5
+        a.text-white.me-3(href='#')
+          i.bi.bi-linkedin.fs-5
+        a.text-white(href='#')
+          i.bi.bi-instagram.fs-5
+    .col-md-7.contact-form
+      form#contactForm
+        .row
+          .col-md-6.mb-3
+            label.form-label.fw-semibold First Name
+            input.form-control(type='text' placeholder='Andrew' required='')
+          .col-md-6.mb-3
+            label.form-label.fw-semibold Last Name
+            input.form-control(type='text' placeholder='Ssemyalo' required='')
+        .mb-3
+          label.form-label.fw-semibold Email address
+          input.form-control(type='email' placeholder='name@example.com' required='')
+        .mb-3
+          label.form-label.fw-semibold Subject
+          select.form-select
+            option(selected='') General Inquiry
+            option(value='1') Bookings
+            option(value='2') Support
+            option(value='3') Feedback
+        .mb-4
+          label.form-label.fw-semibold Message
+          textarea.form-control(rows='5' placeholder='Tell us how we can help...' required='')
+        button.btn.btn-primary.btn-lg.w-100.shadow-sm(type='submit')
+          | Send Message
+section.container.text-center.mt-5
+  a.btn.btn-outline-secondary.mt-3(href='index.html')
+    | Back Home
+// Footer
+footer.bg-light.text-center.mt-5.p-3
+  p.mb-0 &copy; 2026 Parvin Savor Resort. All rights reserved.
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js')

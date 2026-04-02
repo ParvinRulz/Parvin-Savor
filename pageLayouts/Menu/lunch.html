@@ -1,143 +1,318 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lunch Menu</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Main Menu</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Breakfast</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Lunch</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Dinner</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Desert</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Drinks & Cocktails</a>
-        </li>
-      </ul>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    .btn-outline-secondary {
+      background-color: #fd5f97 !important;
+      border-color: #fd5f97 !important;
+      color: white;
+    }
+  </style>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Main Menu</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Breakfast</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Lunch</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Dinner</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Desert</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Drinks & Cocktails</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="container mb-4">
+      <h1 class="text-center mb-3">Lunch Menu</h1>
+      <p class="text-center">
+        One can always go for the buffet served with a drink either water,
+        juice, or a soda.
+      </p>
     </div>
-  </div>
-</nav>
-<!--Lists-->
-<h3>Lunch Menu</h3>
-    <p>
-      One can always go for the buffet served with a drink either water, juice
-      or a soda.
-    </p>
-<!--Lunch menu-->
-<!--Foods-->
-<ul class="list-group">
-  <li class="list-group-item">Spaghetti Bolognese
-    <p>Fried macrons with meatballs.</p>
-    <p>UGX 40,000</p>
-    <img src="/Assets/lunch/pasta2.avif" alt="macrons" width="300">
-  </li>
-  <li class="list-group-item">Brownfried Rice
-  <p>Fried rice with meat.</p>
-  <p>UGX 35,000</p>
-  <img src="/Assets/lunch/rice1.avif" alt="" width="300">
-  </li>
-  <li class="list-group-item">Mattoke
-    <p>Nicely pressed mattoke</p>
-    <p>UGX 15,000</p>
-    <img src="" alt="" width="300">
-  </li>
-  <li class="list-group-item">Jollof Rice
-    <p>A nigerian touch to fried rice and meat.</p>
-    <p>UGX 50,000</p>
-    <img src="/Assets/lunch/jollof.PNG" alt="brown rice" width="300">
-  </li>
-  <li class="list-group-item">Cassava
-    <P>UGX 10,000</P>
-    <img src="" alt="" width="300">
-  </li>
-  <li class="list-group-item">Fries
-    <p>Some crunchy potato wedges</p>
-    <p>UGX 30,000</p>
-    <img src="/Assets/lunch/potatowedge2.jpg" alt="chips" width="300">
-  </li>
-</ul>
-<!--Stews-->
-<ul class="list-group">
-  <li class="list-group-item">Goat meat
-    <p>Stizzling goat stew</p>
-    <p>UGX 30,000</p>
-    <img src="/Assets/lunch/Goat stew.jpg" alt="goat meat soup" width="300">
-  </li>
-  <li class="list-group-item">Chicken Stew
-    <p>Stizzlinng chicken stew</p>
-    <p>UGX 40,000</p>
-    <img src="/Assets/lunch/chickenstew.PNG" alt="chicken soup" width="300">
-  </li>
-  <li class="list-group-item">G.nuts
-    <p>Pasted sause with beef</p>
-    <p>UGX 30,000</p>
-    <img src="/Assets/lunch/gnuts.PNG" alt="pasted gnuts" width="300">
-  </li>
-  <li class="list-group-item">Fish
-    <p>Deepfried fish stew</p>
-    <p>UGX 45,000</p>
-    <img src="/Assets/lunch/fish.PNG" alt="fish soup" width="300">
-  </li>
-<ol class="list-group list-group-numbered">
-  <li class="list-group-item d-flex justify-content-between align-items-start">
-    <div class="ms-2 me-auto">
-      <div class="fw-bold">Sea Food</div>
-      Prons
-      <img src="/Assets/lunch/prons.PNG" alt="" width="300">
+
+    <!-- Lunch Menu: Main Foods -->
+    <div class="container mb-5">
+      <h2 class="mb-3">Main Foods</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="/Assets/lunch/pasta2.avif"
+              class="card-img-top"
+              alt="Spaghetti Bolognese"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Spaghetti Bolognese</h5>
+              <p class="card-text">Fried macrons with meatballs.</p>
+              <p class="fw-bold">UGX 40,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="/Assets/lunch/rice1.avif"
+              class="card-img-top"
+              alt="Brown Fried Rice"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Brown Fried Rice</h5>
+              <p class="card-text">Fried rice with meat.</p>
+              <p class="fw-bold">UGX 35,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Mattoke</h5>
+              <p class="card-text">Nicely pressed mattoke.</p>
+              <p class="fw-bold">UGX 15,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="/Assets/lunch/jollof.PNG"
+              class="card-img-top"
+              alt="Jollof Rice"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Jollof Rice</h5>
+              <p class="card-text">A Nigerian touch to fried rice and meat.</p>
+              <p class="fw-bold">UGX 50,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Cassava</h5>
+              <p class="fw-bold">UGX 10,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="/Assets/lunch/potatowedge2.jpg"
+              class="card-img-top"
+              alt="Fries"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Fries</h5>
+              <p class="card-text">Some crunchy potato wedges.</p>
+              <p class="fw-bold">UGX 30,000</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</ul>
-<!--Fast Foods-->
-<ul class="list-group">
-  <li class="list-group-item">Fries & Chicken
-    <p>Crispy chicken and fries.</p>
-    <p>UGX 35,000</p>
-    <img src="/Assets/lunch/chips and c2.avif" alt="fries and chicken" width="300">
-  </li>
-  <li class="list-group-item">Chicken nuggets
-    <p>Crucnch chicken pieces.</p>
-    <p>UGX 20,000</p>
-    <img src="/Assets/lunch/bucket master.avif" alt="small chicken pieces" width="300">
-  </li>
-  <li class="list-group-item">Liver
-    <p>Pan fried liver.</p>
-    <p>UGX 40,000</p>
-    <img src="/Assets/lunch/liver.avif" alt="liver pieces" width="300">
-  </li>
-  <li class="list-group-item">Bugger
-    <p>Juicy in every bite.</p>
-    <p>UGX 35,000</p>
-    <img src="/Assets/lunch/bugger.PNG" alt="" width="300">
-  </li>
-  <li class="list-group-item">Fries & Pork
-    <p>Pan fried</p>
-    <p>UGX 45,000</p>
-    <img src="/Assets/lunch/pork.PNG" alt="" width="300">
-  </li>
-  <li class="list-group-item">Pizza
-    <p>BBQ flavour.</p>
-    <p>UGX 60,000</p>
-    <img src="/Assets/lunch/bbq c.avif" alt="" width="300">
-  </li>
-</ul>
-</body>
+
+    <!-- Stews -->
+    <div class="container mb-5">
+      <h2 class="mb-3">Stews</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="/Assets/lunch/Goat stew.jpg"
+              class="card-img-top"
+              alt="Goat Meat"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Goat Meat</h5>
+              <p class="card-text">Sizzling goat stew.</p>
+              <p class="fw-bold">UGX 30,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="/Assets/lunch/chickenstew.PNG"
+              class="card-img-top"
+              alt="Chicken Stew"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Chicken Stew</h5>
+              <p class="card-text">Sizzling chicken stew.</p>
+              <p class="fw-bold">UGX 40,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="/Assets/lunch/gnuts.PNG"
+              class="card-img-top"
+              alt="Groundnuts Stew"
+            />
+            <div class="card-body">
+              <h5 class="card-title">G.nuts</h5>
+              <p class="card-text">Pasted sauce with beef.</p>
+              <p class="fw-bold">UGX 30,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="/Assets/lunch/fish.PNG"
+              class="card-img-top"
+              alt="Fish Stew"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Fish</h5>
+              <p class="card-text">Deep fried fish stew.</p>
+              <p class="fw-bold">UGX 45,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="/Assets/lunch/prons.PNG"
+              class="card-img-top"
+              alt="Sea Food"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sea Food</h5>
+              <p class="card-text">Prawns.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fast Foods -->
+    <div class="container mb-5">
+      <h2 class="mb-3">Fast Foods</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="/Assets/lunch/chips and c2.avif"
+              class="card-img-top"
+              alt="Fries & Chicken"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Fries & Chicken</h5>
+              <p class="card-text">Crispy chicken and fries.</p>
+              <p class="fw-bold">UGX 35,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="/Assets/lunch/bucket master.avif"
+              class="card-img-top"
+              alt="Chicken Nuggets"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Chicken Nuggets</h5>
+              <p class="card-text">Crunchy chicken pieces.</p>
+              <p class="fw-bold">UGX 20,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="/Assets/lunch/liver.avif"
+              class="card-img-top"
+              alt="Liver"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Liver</h5>
+              <p class="card-text">Pan fried liver.</p>
+              <p class="fw-bold">UGX 40,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="/Assets/lunch/bugger.PNG"
+              class="card-img-top"
+              alt="Burger"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Burger</h5>
+              <p class="card-text">Juicy in every bite.</p>
+              <p class="fw-bold">UGX 35,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="/Assets/lunch/pork.PNG"
+              class="card-img-top"
+              alt="Fries & Pork"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Fries & Pork</h5>
+              <p class="card-text">Pan fried.</p>
+              <p class="fw-bold">UGX 45,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="/Assets/lunch/bbq c.avif"
+              class="card-img-top"
+              alt="Pizza"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pizza</h5>
+              <p class="card-text">BBQ flavour.</p>
+              <p class="fw-bold">UGX 60,000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="container text-center mt-5">
+      <a href="dinner.html" class="btn btn-outline-secondary mt-3">
+        Order Dinner
+      </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center mt-5 p-3">
+      <p class="mb-0">© 2026 Parvin Savor Resort. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

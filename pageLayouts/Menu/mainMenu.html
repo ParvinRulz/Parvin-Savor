@@ -4,68 +4,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Menu</title>
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: white;
+        }
+
+        /* Background Image Cards */
+        .menu-img {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            position: relative;
+            display: flex;
+            align-items: end;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Dark overlay */
+        .menu-img::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.35);
+            border-radius: 12px;
+        }
+
+        .menu-img span {
+            position: relative;
+            z-index: 2;
+        }
+
+        h5 {
+            margin-top: 10px;
+        }
+        .btn-outline-secondary {
+    background-color: #fd5f97 !important;
+    border-color: #fd5f97 !important;
+    color: white;
+      }
+    </style>
 </head>
+
 <body>
-    <!--Nav-bar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
     <a class="navbar-brand" href="#">Main Menu</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Breakfast</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Lunch</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Dinner</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Desert</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Drinks & Cocktails</a>
-        </li>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Breakfast</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Lunch</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Dinner</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Desert</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Drinks & Cocktails</a></li>
       </ul>
     </div>
   </div>
 </nav>
-<!--Lists-->
-<ul class="list-group">
-  <li class="list-group-item">Breakfast
-  <p>Available from 7:00AM - 11:00AM</p>
-  <img src="/Assets/mainmenu/eggfry.jpg" alt="fried eggs and fries" width="300">
-  <img src="/Assets/mainmenu/grilled-sausages-.jpg" alt=" sausages" width="300">
-  <img src="/Assets/mainmenu/samosa.jpg" alt="samosas" width="300">
-  </li>
-  <li class="list-group-item">Lunch
-    <p>Available from 11:30AM - 3:00PM</p>
-  <img src="/Assets/mainmenu/pasta1.avif" alt="fried macrons" width="300">
-  <img src="/Assets/mainmenu/roasted-chicken-.avif" alt="full chicken" width="300">
-  </li>
-  <li class="list-group-item">Dinner
-    <p>Available from 5:00PM - 10:00PM</p>
-  <img src="/Assets/mainmenu/pasta2.avif" alt="white macrons" width="300">
-  <img src="/Assets/mainmenu/rice2.avif" alt="rice and chicken" width="300">
-  </li>
-  <li class="list-group-item">Desert
-    <p>Sweet treats for any time</p>
-  <img src="/Assets/mainmenu/redvelvet.jpg" alt="cake" width="300">
-  <img src="/Assets/mainmenu/vanilla.avif" alt="icecream" width="300">
-  </li>
-  <li class="list-group-item">Drinks & Cocktails
-    <p>Artisanal Beverages & Fine Wine</p>
-  <img src="/Assets/mainmenu/Blue-Lagoon.jpg" alt="drink" width="300">
-  <img src="/Assets/mainmenu/cocktails.jpg" alt="juices" width="300">
-  </li>
-</ul>
+
+<!-- Content -->
+<div class="container mt-4">
+
+  <ul class="list-group">
+
+    <!-- Breakfast -->
+    <li class="list-group-item">
+      <h5>Breakfast</h5>
+      <p>Available from 7:00AM - 11:00AM</p>
+
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="menu-img" style="background-image: url('/Assets/mainmenu/eggfry.jpg');">
+            <span>Egg & Fries</span>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="menu-img" style="background-image: url('/Assets/mainmenu/grilled-sausages-.jpg');">
+            <span>Sausages</span>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="menu-img" style="background-image: url('/Assets/mainmenu/samosa.jpg');">
+            <span>Samosas</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!-- Lunch -->
+    <li class="list-group-item">
+      <h5>Lunch</h5>
+      <p>Available from 11:30AM - 3:00PM</p>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <div class="menu-img" style="background-image: url('/Assets/mainmenu/pasta1.avif');">
+            <span>Pasta</span>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <div class="menu-img" style="background-image: url('/Assets/mainmenu/roasted-chicken-.avif');">
+            <span>Roasted Chicken</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!-- Dinner -->
+    <li class="list-group-item">
+      <h5>Dinner</h5>
+      <p>Available from 5:00PM - 10:00PM</p>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <div class="menu-img" style="background-image: url('/Assets/mainmenu/pasta2.avif');">
+            <span>Pasta</span>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <div class="menu-img" style="background-image: url('/Assets/mainmenu/rice2.avif');">
+            <span>Rice & Chicken</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!-- Dessert -->
+    <li class="list-group-item">
+      <h5>Desert</h5>
+      <p>Sweet treats for any time</p>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <div class="menu-img" style="background-image: url('/Assets/mainmenu/redvelvet.jpg');">
+            <span>Red Velvet Cake</span>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <div class="menu-img" style="background-image: url('/Assets/mainmenu/vanilla.avif');">
+            <span>Ice Cream</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!-- Drinks -->
+    <li class="list-group-item">
+      <h5>Drinks & Cocktails</h5>
+      <p>Artisanal Beverages & Fine Wine</p>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <div class="menu-img" style="background-image: url('/Assets/mainmenu/Blue-Lagoon.jpg');">
+            <span>Blue Lagoon</span>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <div class="menu-img" style="background-image: url('/Assets/mainmenu/cocktails.jpg');">
+            <span>Juices</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+
+</div>
+
+<section class="container text-center mt-5">
+  <a href="breakfast.html" class="btn btn-outline-secondary mt-3">
+    Order Breakfast 
+  </a>
+</section>
+
+<!-- Footer -->
+<footer class="bg-light text-center mt-5 p-3">
+  <p class="mb-0">© 2026 Parvin Savor Resort. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

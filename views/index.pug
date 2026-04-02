@@ -1,0 +1,77 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Parvin Resort Home Page
+  // Bootstrap CSS
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css' rel='stylesheet')
+  style.
+    .btn-primary {
+    background-color: #fd5f97 !important;
+    border-color: #fd5f97 !important;
+    }
+    .btn-outline-secondary {
+    background-color: #fd5f97 !important;
+    border-color: #fd5f97 !important;
+    color: white;
+    }
+// Navbar
+nav.navbar.navbar-expand-lg.bg-light.shadow-sm
+  .container
+    a.navbar-brand(href='#')
+      img(src='/Assets/signin/real logo.jpeg' width='100' alt='logo')
+    button.navbar-toggler(data-bs-toggle='collapse' data-bs-target='#navMenu')
+      span.navbar-toggler-icon
+    #navMenu.collapse.navbar-collapse
+      ul.navbar-nav.ms-auto
+        li.nav-item
+          a.nav-link(href='aboutus.html') About Us
+        li.nav-item
+          a.nav-link(href='ourbookings.html') Bookings
+        li.nav-item
+          a.nav-link(href='#') Contact
+// Hero Section
+section.container.text-center.mt-5
+  h1.fw-bold Parvin Savor Resort
+  p.lead
+    | A place to relax, chill and work. Enjoy luxury, comfort, and unforgettable experiences.
+  img.img-fluid.rounded.my-4(src='/Assets/signin/parvin.jpg' width='500')
+  h3 Luxury Beachfront Paradise
+  p Experience world-class service, comfort, and relaxation.
+  // CTA
+  a.btn.btn-primary.btn-lg.mt-3(href='ourbookings.html')
+    | Book Now
+// Features Section
+section.container.mt-5
+  .row.text-center
+    .col-md-4.mb-4
+      .card.shadow-sm.h-100
+        .card-body
+          h5.card-title Luxury Rooms
+          p.card-text
+            | Comfortable suites with modern design and ocean views.
+    .col-md-4.mb-4
+      .card.shadow-sm.h-100
+        .card-body
+          h5.card-title Fine Dining
+          p.card-text
+            | Enjoy local and international meals prepared by top chefs.
+    .col-md-4.mb-4
+      .card.shadow-sm.h-100
+        .card-body
+          h5.card-title Relaxation &amp; Spa
+          p.card-text
+            | Rejuvenate your body and mind with our spa services.
+// About Preview
+section.container.text-center.mt-5
+  p
+    | Located in Kampala, Uganda with branches in London (Parvin Kitchen Delight).
+  img.img-fluid.rounded.mt-3(src='/Assets/signin/parvin savor.jpg' width='400')
+  br
+  a.btn.btn-outline-secondary.mt-3(href='aboutus.html')
+    | Learn More About Us
+// Footer
+footer.bg-light.text-center.mt-5.p-3
+  p.mb-0 &copy; 2026 Parvin Savor Resort. All rights reserved.
+// Bootstrap JS
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js')

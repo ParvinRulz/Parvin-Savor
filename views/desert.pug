@@ -1,0 +1,105 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Desert Menu
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css' rel='stylesheet')
+  style.
+    .btn-outline-secondary {
+    background-color: #fd5f97 !important;
+    border-color: #fd5f97 !important;
+    color: white;
+    }
+// Navbar
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.mb-4
+  .container-fluid
+    a.navbar-brand(href='#') Desert Menu
+    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav')
+      span.navbar-toggler-icon
+    #navbarNav.collapse.navbar-collapse
+      ul.navbar-nav.ms-auto
+        li.nav-item
+          a.nav-link.active(href='#') Home
+        li.nav-item
+          a.nav-link(href='#') Breakfast
+        li.nav-item
+          a.nav-link(href='#') Lunch
+        li.nav-item
+          a.nav-link(href='#') Dinner
+        li.nav-item
+          a.nav-link(href='#') Desert
+        li.nav-item
+          a.nav-link(href='#') Drinks &amp; Cocktails
+// Header
+.container.mb-5
+  h1.text-center.mb-3 Desert Menu
+  p.text-center
+    | Sweet treats: Do you like them cold or baked, we&apos;ve got you covered.
+// Pastries
+.container.mb-5
+  h2.mb-3 Pastries
+  .row.g-4
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/mainmenu/redvelvet.jpg' alt='Redvelvet cake')
+        .card-body
+          h5.card-title Redvelvet Cake
+          p.card-text Grab a slice of heavenly delight.
+          p.fw-bold UGX 40,000
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/desert/chocolatec.jpg' alt='Chocolate cake')
+        .card-body
+          h5.card-title Layered Chocolate Cake
+          p.card-text Dark and sweet.
+          p.fw-bold UGX 35,000
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/desert/butterscotch.jpg' alt='Butterscotch cake')
+        .card-body
+          h5.card-title Butterscotch Cake
+          p.card-text Taste is really great.
+          p.fw-bold UGX 35,000
+// Paffate
+.container.mb-5
+  h2.mb-3 Paffate
+  .row.g-4
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/desert/glasscake.jpg' alt='Cake Paffate')
+        .card-body
+          h5.card-title Cake Paffate
+          p.card-text Pastries at its best.
+          p.fw-bold UGX 35,000
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/desert/fruitjar.jpg' alt='Fruit Paffate')
+        .card-body
+          h5.card-title Fruit Paffate
+          p.card-text Fruits of all kinds.
+          p.fw-bold UGX 35,000
+// Icecream
+.container.mb-5
+  h2.mb-3 Icecream
+  .row.g-4
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/desert/cones.jpg' alt='Mixed Icecream flavours')
+        .card-body
+          h5.card-title Mixed Icecream Flavours
+          p.card-text For any time.
+          p.fw-bold UGX 40,000
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/desert/scoops.jpg' alt='Scoops of Icecream')
+        .card-body
+          h5.card-title Icecream Scoops
+          p.card-text Scoops of greatness in many flavours.
+          p.fw-bold UGX 35,000
+section.container.text-center.mt-5
+  a.btn.btn-outline-secondary.mt-3(href='drinks.html')
+    | Order Drinks
+// Footer
+footer.bg-light.text-center.mt-5.p-3
+  p.mb-0 &copy; 2026 Parvin Savor Resort. All rights reserved.
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js')

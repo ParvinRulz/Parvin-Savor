@@ -1,64 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us Page</title>
-</head>
-<body>
-    <h1>This is the About us page.</h1>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .btn-outline-secondary {
+            background-color: #fd5f97 !important;
+            border-color: #fd5f97 !important;
+            color: white !important;
+        }
+
+        .btn-outline-secondary:hover {
+            background-color: #e94c86 !important;
+            border-color: #e94c86 !important;
+        }
+
+        .form-card {
+            max-width: 700px;
+            margin: auto;
+        }
+    </style>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Home</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Sign-In</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About-Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Bookings</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Logout</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Forms</a>
-        </li>
-      </ul>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Home</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Sign-In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About-Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ourbookings.html">Bookings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pageLayouts/Menu/mainMenu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signout.html">Logout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pageLayouts/Forms/applications.html">Forms</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Heading -->
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bold">This is the Application page.</h1>
+        </div>
+
+        <!-- Application Form Section -->
+        <div class="card shadow border-0 form-card">
+            <div class="card-body p-4 p-md-5">
+
+                <h3 class="mb-3">Application Forms</h3>
+
+                <p class="text-muted mb-4">
+                    We are hiring two waiters and two waitresses to join our workforce.
+                    Feel free to apply now.
+                </p>
+
+                <form>
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label">
+                            First Name:
+                        </label>
+                        <input type="text" id="firstName" name="firstName"
+                            class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label">
+                            Last Name:
+                        </label>
+                        <input type="text" id="lastName" name="lastName"
+                            class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="age" class="form-label">
+                            Age:
+                        </label>
+                        <input type="number" id="age" name="age"
+                            class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phoneNumber" class="form-label">
+                            Phone Number:
+                        </label>
+                        <input type="number" id="phoneNumber"
+                            name="phoneNumber" class="form-control">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="email" class="form-label">
+                            Email:
+                        </label>
+                        <input type="email" id="email" name="email"
+                            class="form-control">
+                    </div>
+
+                    <button class="btn btn-outline-secondary px-4">
+                        Submit
+                    </button>
+                </form>
+
+                <div class="mt-4">
+                    <button class="btn btn-outline-secondary px-4">
+                        Next
+                    </button>
+                </div>
+
+            </div>
+        </div>
     </div>
-  </div>
-</nav>
-<!--Forms-->
-    <h3>Application Forms</h3>
-    <p>
-      We are hiring two waiters and two waitresses to join our workforce. Feel
-      free to apply now.
-    </p>
-    <form>
-      <label for="fname">First name:</label><br />
-      <input type="text" id="fname" name="fname" /><br />
-      <label for="lname">Last name:</label><br />
-      <input type="text" id="lname" name="lname" /><br />
-      <label for="age">Age:</label><br />
-      <input type="number" id="age" name="age" /><br />
-      <label for="email">Email:</label><br />
-      <input type="email" id="email" name="email" /><br />
-      <br />
-      <button>Submit</button>
-    </form>
-    <br>
-    <button>Next</button>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4 mt-5 border-top">
+        <p class="mb-0">
+            © 2026 Parvin Savor Resort. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

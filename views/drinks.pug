@@ -1,0 +1,103 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Drinks &amp; Cocktails Menu
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css' rel='stylesheet')
+  style.
+    .btn-outline-secondary {
+    background-color: #fd5f97 !important;
+    border-color: #fd5f97 !important;
+    color: white;
+    }
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.mb-4
+  .container-fluid
+    a.navbar-brand(href='#') Main Menu
+    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav')
+      span.navbar-toggler-icon
+    #navbarNav.collapse.navbar-collapse
+      ul.navbar-nav.ms-auto
+        li.nav-item
+          a.nav-link.active(href='index.html') Home
+        li.nav-item
+          a.nav-link(href='breakfast.html') Breakfast
+        li.nav-item
+          a.nav-link(href='lunch.html') Lunch
+        li.nav-item
+          a.nav-link(href='dinner.html') Dinner
+        li.nav-item
+          a.nav-link(href='desert.html') Desert
+        li.nav-item
+          a.nav-link(href='drinks.html') Drinks &amp; Cocktails
+// Header
+.container.mb-4
+  h1.text-center.mb-3 Drinks Menu
+  p.text-center
+    | Quench your thirst and enjoy the taste. Feel free to order as your
+    | cravings desire.
+// Drinks section
+.container.mb-5
+  h2.mb-3 Drinks
+  .row.g-4
+    // Sodas Section
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/drinks/soda2.jpg' alt='Different types of sodas.')
+        img.card-img-top(src='/Assets/drinks/soda3.jpeg' alt='Different types of sodas.')
+        .card-body
+          h5.card-title Sodas
+          p.card-text
+            | Refreshing cold and room temp sodas to get you through the day.
+          p.fw-bold UGX 10,000
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/drinks/juice.jpg' alt='Orange Juice')
+        .card-body
+          h5.card-title Orange Juice
+          p.card-text Nice orange Juice with cherries.
+          p.fw-bold UGX 15,000
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/drinks/Blue-Lagoon.jpg' alt='Blue drink')
+        .card-body
+          h5.card-title Blue Lagoon
+          p.card-text The taste is out of this world.
+          p.fw-bold UGX 15,000
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/drinks/smoothies.jpg' alt='')
+        .card-body
+          h5.card-title Smoothies
+          p.card-text Cocktail smoothies with milky cream top.
+          p.fw-bold UGX 20,000
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/drinks/cocktail1.avif' alt='Juice')
+        .card-body
+          h5.card-title Cocktail Juice
+          p.card-text Orange, cherry &amp; mango delight.
+          p.fw-bold UGX 15,000
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/drinks/lemonade.jpg' alt='Lemonade')
+        .card-body
+          h5.card-title Lemonade
+          p.card-text
+            | As the saying goes, when life gives you lemons, make
+            | Lemonade&#x1F602;&#x1F602;&#x1F917;.
+          p.fw-bold UGX 15,000
+    .col-md-4
+      .card.h-100
+        img.card-img-top(src='/Assets/drinks/water.jpg' alt='Water')
+        .card-body
+          h5.card-title Water
+          p.card-text Quench your thirst with water.
+          p.fw-bold UGX 10,000
+// Buttons
+section.container.text-center.mt-5
+  a.btn.btn-outline-secondary.mt-3(href='drinks.html')
+    | Order Now
+// Footer
+footer.bg-light.text-center.mt-5.p-3
+  p.mb-0 &copy; 2026 Parvin Savor Resort. All rights reserved.
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js')

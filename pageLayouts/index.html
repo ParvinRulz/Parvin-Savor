@@ -11,6 +11,63 @@
       rel="stylesheet"
     />
     <style>
+      body {
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+          url("/Assets/resortlooks/sea\ view.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        min-height: 100vh;
+      }
+      /* Navbar */
+      .navbar {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        -webkit-backdrop-filter: blur(12px);
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar-brand {
+        font-weight: 700;
+        color: black !important;
+      }
+
+      .nav-link {
+        font-weight: 500;
+        color: black !important;
+      }
+
+      .nav-link:hover {
+        color: #fd5f97 !important;
+      }
+      .card {
+        border: none;
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      .hero-image {
+        width: 100%;
+        max-width: 900px;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      .feature-image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-top: 10px;
+      }
       .btn-primary {
         background-color: #fd5f97 !important;
         border-color: #fd5f97 !important;
@@ -20,12 +77,26 @@
         border-color: #fd5f97 !important;
         color: white;
       }
+      /* Footer */
+      footer {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.08);
+        -webkit-backdrop-filter: blur(12px);
+        color: black;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      footer p {
+        margin: 0;
+        font-weight: 500;
+      }
     </style>
   </head>
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="/Assets/signin/real logo.jpeg" width="100" alt="logo" />
@@ -51,7 +122,9 @@
               <a class="nav-link" href="#">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pageLayouts/Menu/mainMenu.html">Main Menu</a>
+              <a class="nav-link" href="/pageLayouts/Menu/mainMenu.html"
+                >Main Menu</a
+              >
             </li>
           </ul>
         </div>
@@ -66,11 +139,7 @@
         unforgettable experiences.
       </p>
 
-      <img
-        src="/Assets/signin/parvin.jpg"
-        class="img-fluid rounded my-4"
-        width="500"
-      />
+      <img src="/Assets/signin/parvin.jpg" class="hero-image mb-4" />
 
       <h3>Luxury Beachfront Paradise</h3>
       <p>Experience world-class service, comfort, and relaxation.</p>
@@ -91,7 +160,11 @@
               <p class="card-text">
                 Comfortable suites with modern design and ocean views.
               </p>
-              <img src="/Assets/rooms/deluxe2.avif" alt="deluxe room" width="500"/>
+              <img
+                src="/Assets/rooms/deluxe2.avif"
+                alt="deluxe room"
+                class="feature-image"
+              />
             </div>
           </div>
         </div>
@@ -103,7 +176,11 @@
               <p class="card-text">
                 Enjoy local and international meals prepared by top chefs.
               </p>
-              <img src="/Assets/rooms/dining hall1.avif" alt="dinning hall" width="500"/>
+              <img
+                src="/Assets/rooms/dining hall1.avif"
+                alt="dinning hall"
+                class="feature-image"
+              />
             </div>
           </div>
         </div>
@@ -115,7 +192,11 @@
               <p class="card-text">
                 Rejuvenate your body and mind with our spa services.
               </p>
-              <img src="/Assets/rooms/double room.avif" alt="spa room" width="500" />
+              <img
+                src="/Assets/rooms/double room.avif"
+                alt="spa room"
+                class="feature-image"
+              />
             </div>
           </div>
         </div>
@@ -129,12 +210,6 @@
         Delight).
       </p>
 
-      <img
-        src="/Assets/signin/parvin savor.jpg"
-        class="img-fluid rounded mt-3"
-        width="400"
-      />
-
       <br />
       <a href="aboutus.html" class="btn btn-outline-secondary mt-3">
         Learn More About Us
@@ -142,7 +217,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-light text-center mt-5 p-3">
+    <footer class="text-center py-4 mt-5">
       <p class="mb-0">© 2026 Parvin Savor Resort. All rights reserved.</p>
     </footer>
 

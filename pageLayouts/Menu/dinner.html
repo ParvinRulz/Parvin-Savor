@@ -10,15 +10,61 @@
     />
   </head>
   <style>
+    body {
+      background:
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url("/Assets/resortlooks/pool\ side.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
+    }
+    /* Navbar */
+    .navbar {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      color: black !important;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      color: black !important;
+    }
+
+    .nav-link:hover {
+      color: #fd5f97 !important;
+    }
     .btn-outline-secondary {
       background-color: #fd5f97 !important;
       border-color: #fd5f97 !important;
       color: white;
     }
+    /* Footer */
+    footer {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.08);
+      -webkit-backdrop-filter: blur(12px);
+      color: black;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    footer p {
+      margin: 0;
+      font-weight: 500;
+    }
   </style>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Main Menu</a>
         <button
@@ -34,10 +80,18 @@
             <li class="nav-item">
               <a class="nav-link active" href="index.html">Home</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="breakfast.html">Breakfast</a></li>
-            <li class="nav-item"><a class="nav-link" href="lunch.html">Lunch</a></li>
-            <li class="nav-item"><a class="nav-link" href="dinner.html">Dinner</a></li>
-            <li class="nav-item"><a class="nav-link" href="desert.html">Desert</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="breakfast.html">Breakfast</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="lunch.html">Lunch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dinner.html">Dinner</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="desert.html">Desert</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="drinks.html">Drinks & Cocktails</a>
             </li>
@@ -57,7 +111,7 @@
 
     <!-- Dinner Menu: Main Foods -->
     <div class="container mb-5">
-      <h2 class="mb-3">Main Foods</h2>
+      <h1 class="mb-3">Main Foods</h1>
       <div class="row g-4">
         <div class="col-md-4">
           <div class="card h-100">
@@ -309,7 +363,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-light text-center mt-5 p-3">
+    <footer class="text-center py-4 mt-5">
       <p class="mb-0">© 2026 Parvin Savor Resort. All rights reserved.</p>
     </footer>
   </body>
